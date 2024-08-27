@@ -1,0 +1,135 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.uni-icons {
+  color: #32CD32 !important;
+}
+.body {
+  width: 100vw;
+  padding: 0 30rpx;
+}
+.body .banner {
+  width: 100%;
+  padding: 30rpx 0;
+}
+.body .banner swiper {
+  width: 100%;
+  height: 340rpx;
+}
+.body .banner swiper image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+.body .notice {
+  width: 690rpx;
+  height: 80rpx;
+  background-color: #f9f9f9;
+  border-radius: 80rpx;
+  display: flex;
+  line-height: 80rpx;
+  overflow: hidden;
+}
+.body .notice .left {
+  width: 150rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.body .notice .left text {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #32CD32;
+}
+.body .notice .center {
+  flex: 1;
+}
+.body .notice .center swiper {
+  width: 100%;
+  height: 100%;
+}
+.body .notice .center swiper swiper-item {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 30rpx;
+  color: #32CD32;
+}
+.body .notice .right {
+  width: 60rpx;
+  text-align: center;
+}
+.body .selelt {
+  padding-top: 10rpx;
+  width: 100%;
+}
+.body .selelt .name {
+  color: #FF9800;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.body .selelt .date {
+  display: flex;
+  align-items: center;
+  color: #32CD32;
+}
+.body .selelt .date .text {
+  margin-left: 5rpx;
+  font-weight: bold;
+}
+.body .selelt .content {
+  margin-top: 30rpx;
+}
+.body .selelt .content scroll-view {
+  white-space: nowrap;
+}
+.body .selelt .content scroll-view .box {
+  width: 200rpx;
+  height: 430rpx;
+  margin-right: 15rpx;
+  display: inline-block;
+}
+.body .selelt .content scroll-view .box image {
+  width: 100%;
+  height: 100%;
+}
+.body .theme {
+  padding: 50rpx 0;
+}
+.body .theme .name {
+  color: #FF9800;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.body .theme .more {
+  font-size: 32rpx;
+  color: #32CD32;
+}
+.body .theme .content {
+  margin-top: 30rpx;
+  display: grid;
+  gap: 15rpx;
+  grid-template-columns: repeat(3, 1fr);
+}
