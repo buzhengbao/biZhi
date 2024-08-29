@@ -8,8 +8,34 @@
 			<view class="address">来自：哈尔滨</view>
 		</view>
 
-		<view class="section"></view>
-		<view class="section"></view>
+		<view class="section">
+			<view class="list">
+				<view class="row" v-for="item in 3">
+					<view class="left">
+						<uni-icons type="notification" size="20"></uni-icons>
+						<view class="text">我的下载</view>
+					</view>
+					<view class="right">
+						<view class="text">22</view>
+						<uni-icons type="right" size="18"></uni-icons>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="section">
+			<view class="list">
+				<view class="row" v-for="item in 3">
+					<view class="left">
+						<uni-icons type="notification" size="20"></uni-icons>
+						<view class="text">我的下载</view>
+					</view>
+					<view class="right">
+						<view class="text">22</view>
+						<uni-icons type="right" size="18"></uni-icons>
+					</view>
+				</view>
+			</view>
+		</view>
 	</view>
 </template>
 
@@ -18,6 +44,9 @@
 </script>
 
 <style lang="scss" scoped>
+	.uni-icons{
+		color: $theme-color !important;
+	}
 	.userLayout {
 		.userInfo {
 			display: flex;
@@ -43,6 +72,42 @@
 			.address{
 				font-size: 28rpx;
 				color: #333;
+			}
+		}
+		.section{
+			width: 690rpx;
+			margin: 30rpx auto;
+			border: 1rpx solid #eee;
+			border-radius: 10rpx;
+			box-shadow: 0 0 15rpx rgba(0, 0, 0, 0.2);
+			background-color: #fff;
+			.list{
+				.row{
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					padding: 20rpx 30rpx;
+					border-bottom: 1rpx solid #eee;
+					&:last-child{
+						border-bottom: 0;
+					}
+					.left{
+						display: flex;
+						align-items: center;
+						.text{
+							padding-left: 20rpx;
+							color: $theme-text-color;
+						}
+					}
+					.right{
+						display: flex;
+						align-items: center;
+						.text{
+							font-size: 29rpx;
+							color: $theme-text-color;
+						}
+					}
+				}
 			}
 		}
 	}

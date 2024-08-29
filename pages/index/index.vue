@@ -40,7 +40,7 @@
 			<view class="content">
 				<scroll-view scroll-x>
 					<view class="box" v-for="item in 8">
-						<image src="../../common/img/Snipaste_2024-08-16_18-55-26.jpg" mode="aspectFill"></image>
+						<image @click="preview" src="../../common/img/Snipaste_2024-08-16_18-55-26.jpg" mode="aspectFill"></image>
 					</view>
 				</scroll-view>
 			</view>
@@ -64,7 +64,11 @@
 </template>
 
 <script setup>
-
+	const preview = () =>{
+		uni.navigateTo({
+			url: '/pages/preview/preview'
+		})
+	}
 </script>
 
 <style lang="scss">
